@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: z hzt2840201587@163.com, z, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.43.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.1.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\project32\door\MDK-ARM\door.uvprojx
+Project File Date:  04/12/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'door'
+compiling freertos.c...
+../PORT/ME/ME.h(4): warning:  #1295-D: Deprecated declaration key1_scan - give arg types
+  void key1_scan();
+../PORT/tftlcd/tft_lcd.h(94): warning:  #1-D: last line of file ends without a newline
+  #endif // TFT_LCD_H
+../Core/Src/freertos.c(381): warning:  #177-D: variable "managePassword"  was declared but never referenced
+  	char managePassword[PASSWORD_LENGTH + 1];
+../Core/Src/freertos.c(382): warning:  #550-D: variable "status"  was set but never used
+    osStatus_t status;
+../Core/Src/freertos.c(467): warning:  #550-D: variable "passwordVerified"  was set but never used
+    uint8_t passwordVerified = 0;
+../Core/Src/freertos.c(468): warning:  #177-D: variable "storedPassword"  was declared but never referenced
+    char storedPassword[PASSWORD_LENGTH+1];
+../Core/Src/freertos.c(469): warning:  #550-D: variable "Password"  was set but never used
+  	char Password[PASSWORD_LENGTH+1]="123456";
+../Core/Src/freertos.c(848): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+      if (storedPassword[i] != -1 && storedPassword[i] != 0x00) {
+../Core/Src/freertos.c(823): warning:  #550-D: variable "time"  was set but never used
+  	RTC_TimeTypeDef time;
+../Core/Src/freertos.c(824): warning:  #550-D: variable "date"  was set but never used
+  	RTC_DateTypeDef date;
+../Core/Src/freertos.c(60): warning:  #550-D: variable "g_LastMsg"  was set but never used
+  static DisplayMsg_TypeDef g_LastMsg = DISPLAY_MSG_MAIN;
+../Core/Src/freertos.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=22740 RO-data=1768 RW-data=272 ZI-data=37256  
+FromELF: creating hex file...
+"door\door.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.3.0.pack
+                ARM::CMSIS@6.3.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil::STM32F1xx_DFP@2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_door
+  D:/Arm/packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include
+  D:/Arm/packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.2.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
